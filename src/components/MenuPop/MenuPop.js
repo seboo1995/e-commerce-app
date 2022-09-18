@@ -1,9 +1,11 @@
 import React from "react";
 
 export const MenuPop = (props) => {
+
+    //this should be in database maybe
   const all_items = {
     "home-items": {
-      columns: ["styles", "topic", "brands"],
+      columns: ["styles-home", "topic-home", "brands-home"],
       column_1: ["default", "full-width", "modern", "collections", "Dark Skin"],
       column_2: [
         "furniture1",
@@ -15,7 +17,20 @@ export const MenuPop = (props) => {
       column_3: ["brandname", "slothing", "masore", "gap"],
     },
     'shop-items':{
-        columns: ["styles", "topic", "brands"],
+        columns: ["styles-shop", "topic-shop", "brands-shop"],
+      column_1: ["default", "full-width", "modern", "collections", "Dark Skin"],
+      column_2: [
+        "furniture1",
+        "furniture2",
+        "decoration",
+        "cosmetic",
+        "jewlerry",
+      ],
+      column_3: ["brandname", "slothing", "masore", "gap"],
+
+    },
+    'product-items':{
+        columns: ["styles-product", "topic-product", "brands-product"],
       column_1: ["default", "full-width", "modern", "collections", "Dark Skin"],
       column_2: [
         "furniture1",
@@ -29,7 +44,7 @@ export const MenuPop = (props) => {
     }
   };
   const target_obj = all_items[props.menu_item]
-  console.log(props)
+  console.log(target_obj)
   return (
     <div>
         {target_obj.columns.map(item => {

@@ -44,3 +44,6 @@ hr{
 .icons div{
     margin-left:20px
 }
+.search{
+    cursor:pointer;
+}
