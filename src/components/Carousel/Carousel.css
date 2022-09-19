@@ -27,7 +27,44 @@ margin-top: 40px;
 }
 .carousel-shop-button{
     margin-top: 120px;
+    display:flex;
+    flex-direction:row;
 }
 .carousel-picture{
     margin-top:120px;
+}
+.carousel-lookbook{
+    font-size:20px;
+    width:50px;
+    margin-left:20px;
+}
+.play-button{
+    margin-left:20px;
+}
+.prev-next-buttons{
+    margin-top:550px;
+    display:flex;
+    flex-direction:row;
+    font-size: 18px;
+    color:grey;
+}
+.prev-button{
+    margin-right: 20px;
+
+}
+
+.prev-button:hover{
+   color:black;
+   transition: color 0.5s;
+   cursor: pointer;
+}
+.next-button:hover{
+    color:black;
+    transition: color 0.5s;
+   cursor: pointer;
+}
+
+
+.next-button{
+    margin-left: 20px;
 }

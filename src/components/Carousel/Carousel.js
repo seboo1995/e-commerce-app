@@ -6,7 +6,7 @@ export const Carousel = () => {
   return (
     <div className='carousel'>
 
-<Carouseltem/>
+    <Carouseltem/>
 
 
     </div>
